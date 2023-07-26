@@ -20,7 +20,7 @@ The Faculty Calendar Scheduler web application is built using the following tech
 - Web Server: Apache
 - Database: MySQL
 
-## Basic WebPages Layout
+## Basic Web Page Layout
 - Login page
   - Both the HOD and the faculty can login to the website through this page
 - Dashboard
@@ -36,9 +36,3 @@ The Faculty Calendar Scheduler web application is built using the following tech
   - Here the faculties can view notifications and take a decision
 - Profile Settings
   - The faculty can view/edit his/her profile details here.
-
-
-
-## Brief About Individual Pages
-### Login Page
-- 
