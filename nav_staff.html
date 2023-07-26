@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css'><link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<?php 
+session_start(); 
+include "db_conn.php";
+
+
+if (isset($_SESSION['name']) && isset($_SESSION['username'])) 
+
+ ?>
+
+
+<div class='dashboard'>
+    <div class="dashboard-nav">
+        <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#"
+                                                                                   class="brand-logo"><i
+                class="fas fa-anchor"></i> <span>BRAND</span></a></header>
+        <nav class="dashboard-nav-list a"><a href="home.php" class="dashboard-nav-item active"><i class="fas fa-home"></i>
+            Home </a><a
+                href="timetable.php" class="dashboard-nav-item "><i class="fas fa-tachometer-alt"></i> timetable
+        </a><a
+                href="" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> notifications </a>
+         
+            <a href="staff_profile.php" class="dashboard-nav-item"><i class="fas fa-user"></i> Profile </a>
+          <div class="nav-item-divider"></div>
+          <a
+                    href="index.php" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
+        </nav>
+    </div>
+    <div class='dashboard-app'>
+        <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a> 
+        <h2> hello,  <?php echo $_SESSION['name']; ?> </h2>
+        </header>
+        <div class="mainContent clearfix">
+        <div class='dashboard-content'>
+            <div class='container'>
+                <div class='card'>
+                    <div class='card-header'>
+                  
+                                 <h1> welcome back <?php echo $_SESSION['username']; ?> </h1>
+                
+                    </div>
+                    <div class='card-body'>
+                    <h3 >
+	<script>
+		// Get the current date
+        var currentDate = new Date();
+
+// Print the current date
+function printDate() {
+    document.getElementById("date").textContent = currentDate.toLocaleDateString();
+}
+
+		// Print the current weekday
+		function printWeekday() {
+			var weekday = currentDate.toLocaleDateString("en-US", { weekday: 'long' });
+			document.getElementById("weekday").textContent = weekday;
+		}
+	</script>
+
+<body onload="printDate(); printWeekday();">
+
+	<p>Date: <span id="date"></span></p>
+	<p>Weekday: <span id="weekday"></span></p>
+</body>
+
+</h3>
+
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+</div>
+    </div>
+<section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+<script src="home.js"> </script>
+
+</body>
+</html>
